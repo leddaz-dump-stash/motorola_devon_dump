@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Game optimizations device config
+-->
+<game-optimization version="1">
+
+    <devconfig>
+    </devconfig>
+
+    <!-- base game -->
+    <optimization name="base_game" mode="normal">
+        <default-rr>60</default-rr>
+    </optimization>
+
+    <!-- 60fps game -->
+    <optimization name="60fps_game" parent="base_game">
+        <default-rr>60</default-rr>
+    </optimization>
+    <optimization name="60fps_heavy_game" parent="60fps_game">
+    </optimization>
+    <!-- 90fps game -->
+    <optimization name="90fps_game" parent="base_game">
+        <default-rr>90</default-rr>
+    </optimization>
+    <optimization name="90fps_heavy_game" parent="90fps_game">
+    </optimization>
+    <!-- 120fps game -->
+    <optimization name="120fps_game" parent="base_game">
+        <default-rr>90</default-rr>
+    </optimization>
+    <optimization name="120fps_heavy_game" parent="120fps_game">
+    </optimization>
+    <!-- 144fps game -->
+    <optimization name="144fps_game" parent="base_game">
+        <default-rr>90</default-rr>
+    </optimization>
+    <optimization name="144fps_heavy_game" parent="144fps_game">
+    </optimization>
+
+    <!-- yuanshen -->
+    <optimization name="60fps_restricted_game" parent="60fps_heavy_game">
+    </optimization>
+
+    <!-- other games -->
+    <optimization name="other_games" parent="base_game">
+    </optimization>
+
+    <optimization name="com.tencent.tmgp.sgame" refs="60fps_game" />
+    <optimization name="com.tencent.tmgp.sgamece" refs="60fps_game" />
+    <optimization name="com.tencent.tmgp.pubgmhd" refs="60fps_game" />
+    <optimization name="com.rovio.angrybirds" refs="90fps_game" />
+
+</game-optimization>

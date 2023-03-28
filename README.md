@@ -1,0 +1,14 @@
+# user 12 S2SN32.34-72-12 6a9200 release-keys
+- manufacturer: motorola
+- platform: bengal
+- codename: devon
+- flavor: user
+- release: 12
+- id: S2SN32.34-72-12
+- incremental: 6a9200
+- tags: release-keys
+- fingerprint: motorola/devon_g/devon:11/S2SN32.34-72-12/6a9200:user/release-keys
+- is_ab: true
+- brand: motorola
+- branch: user-12-S2SN32.34-72-12-6a9200-release-keys
+- repo: motorola_devon_dump
